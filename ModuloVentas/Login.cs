@@ -1,0 +1,42 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ModuloVentas
+{
+    public partial class Login : UserControl
+    {
+        public Login()
+        {
+            InitializeComponent();
+
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+           
+        }
+
+        private void btnValidar_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "admin" && txtContrase.Text == "admin")
+            {
+                this.Visible = false;
+                MessageBox.Show("Credenciales correctas, puede operar el sistema");
+            }
+            else
+            {
+                MessageBox.Show("Las credenciales ingresadas son incorrectas");
+            }
+        }
+    }
+}
